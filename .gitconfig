@@ -1,26 +1,14 @@
 # This is Git's per-user configuration file.
-[user]
-# Please adapt and uncomment the following lines:
-#	name = Jake Quattrocchi
-#	email = jake.quattrocchi@gmail.com
-[core]
-	editor = vim
-	excludesfile = /Users/jakequattrocchi/.gitignore_global
-[user]
-	name = Jake Quattrocchi
-	email = jake.quattrocchi@gmail.com
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [alias]
-    co = checkout
     oops = reset --soft HEAD~1
-    delete-all-branches = branch | grep -v "*" | xargs git branch -D
-    sorted-branches = branch --sort=-committerdate
-[push]
-	default = current
+    branch-delete-all = branch | grep -v "*" | xargs git branch -D
+    branch-sorted = branch --sort=-committerdate
+[core]
+    editor = vim
 [pull]
-	rebase = true
+    rebase = true
+[push]
+    default = current
+[user]
+    name = Jake Quattrocchi
+    email = jake.quattrocchi@gmail.com

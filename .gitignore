@@ -1,5 +1,8 @@
-# Ignore everything
+# Everything in this directory
 /*
+
+# Desktop Services Store on macOS
+.DS_Store
 
 # But not:
 !.gitignore
