@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+
+# But not:
+!.gitignore
+!.zshrc
+!.tmux.conf
+!.gitconfig
+!.config/
+.config/*
+!.config/nvim/
