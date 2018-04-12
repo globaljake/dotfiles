@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/jakequattrocchi/@/omicron/projects/halogen-web/.git/refs/heads'
-let g:netrw_dirhist_2='/Users/jakequattrocchi/@/omicron/projects/halogen-web/.git/refs/heads/fix'
-let g:netrw_dirhist_3='/Users/jakequattrocchi/@/omicron/projects/halogen-web/.git/refs/heads'

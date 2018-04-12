@@ -23,19 +23,17 @@ PATH=/usr/local/bin:/usr/local/tfs:$PATH;
 export PATH="/usr/local/sbin:$PATH"
 
 # Git #
+alias get="git checkout";
 alias gas="git add . && git status";
 alias gcm="git commit -m ";
 alias gpr="git pull --rebase";
 alias gpo="git push origin";
 alias gs="git status";
-alias gc="git commit";
 alias gst="git stash save";
 alias gstp="git stash pop";
-alias git-oops="git reset --soft HEAD~1";
-alias git-delete-all-branches="git branch | grep -v '*' | xargs git branch -D";
+alias git-branch-delete-all="git branch | grep -v '*' | xargs git branch -D";
 alias gc-="git checkout -";
 alias grm="git rebase master";
-alias get="git checkout";
 # Halogen #
 alias hal="cd $HAL_HOME";
 export HAL_HOME=~/@/omicron/projects/halogen-web
@@ -64,25 +62,6 @@ function mkdir
 {
   command mkdir $1 && cd $1
 }
-
-forest_fire() {
-  echo "This deletes all of the following branches:" && \
-  git branch --list $1\*
-  confirm && git branch --list $1\* | xargs git branch -D
-}
-
-confirm() {
-  read -r -p "${1:-Are you sure? [y/N]} " response
-  case $response in
-    [yY][eE][sS]|[yY])
-      true
-      ;;
-    *)
-      false
-      ;;
-  esac
-}
-
 
 source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
