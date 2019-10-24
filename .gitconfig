@@ -4,7 +4,7 @@
     branch-delete-all = branch | grep -v "*" | xargs git branch -D
     branch-sorted = branch --sort=-committerdate
 [core]
-    editor = vim
+    editor = nvim
 [pull]
     rebase = true
 [push]
