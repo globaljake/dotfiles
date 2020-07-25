@@ -1,9 +1,9 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 DEFAULT_USER="jakequattrocchi"
-plugins=(git tmux docker postgres)
+plugins=(git tmux node npm osx docker postgres)
 
 export UPDATE_ZSH_DAYS=30
 #ENABLE_CORRECTION="true"
@@ -11,11 +11,7 @@ export UPDATE_ZSH_DAYS=30
 
 source $ZSH/oh-my-zsh.sh
 
-export GOPATH="$HOME/projects"
-export EDITOR=nvim
-#source "$HOME/.local/share/nvim/plugged/gruvbox/gruvbox_256palette.sh"
-
-export PATH="/usr/local/sbin:$PATH"
+export EDITOR=vim
 
 # Git #
 alias get="git checkout";
@@ -31,12 +27,11 @@ alias git-branch-delete-all="git branch | grep -v '*' | xargs git branch -D";
 alias hal="cd ~/@/omicron/projects/halogen-web";
 
 # General #
-alias vim="nvim";
 alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor";
 alias cl="clear && printf '\e[3J'";
 alias @="cd ~/@";
 alias temp="cd ~/@/temp";
-#alias dns-flush-cache=sudo dscacheutil -flushcache;
+alias dns-flush-cache=sudo dscacheutil -flushcache;
 alias generate-ssh-key=ssh-keygen -t rsa -b 4069 -C "jake.quattrocchi@gmail.com";
 
 function myip {
