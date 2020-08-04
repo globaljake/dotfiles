@@ -13,6 +13,9 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
 
+# Current Project#
+alias current="cd ~/@/triller";
+
 # Git #
 alias get="git checkout";
 alias gs="git status";
@@ -23,8 +26,6 @@ alias gpo="git push origin";
 alias gst="git stash save";
 alias gstp="git stash pop";
 alias git-branch-delete-all="git branch | grep -v '*' | xargs git branch -D";
-# Halogen #
-alias hal="cd ~/@/omicron/projects/halogen-web";
 
 # General #
 alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor";
