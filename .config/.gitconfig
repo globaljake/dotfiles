@@ -13,3 +13,5 @@
 [user]
     name = Jake Quattrocchi
     email = jake.quattrocchi@gmail.com
+[init]
+	defaultBranch = main
