@@ -30,6 +30,7 @@ asdf install
 # Install global npm packages
 npm i -g elm-format elm-test
 
-# Source .tmux.conf
+# Source .tmux.conf to load plugins
 tmux
 tmux source-file ~/.tmux.conf
+tmux kill-session

@@ -9,10 +9,10 @@
 # Key Repeat
 # defaults write -g KeyRepeat -int 2 # Fast (only works after restart)
 
-# Delay Until Repeat
+# Delay Until Repeat (only works after restart)
 # defaults write -g InitialKeyRepeat -int 15 # Short
 
-# Modifier Keys... → Caps Lock Key: Control (only works after restart)
+# Modifier Keys... → Caps Lock Key: Control (doesn't persist)
 # hidutil property --set '{ "UserKeyMapping":[{ "HIDKeyboardModifierMappingSrc":0x700000039, "HIDKeyboardModifierMappingDst":0x700000029 }] }'
 
 ###############################################################################
