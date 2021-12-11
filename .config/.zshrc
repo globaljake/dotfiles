@@ -1,5 +1,6 @@
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
-export EDITOR='vim'
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/homebrew/bin:$PATH
+export EDITOR="vim"
+export TERM="xterm-256color"
 
 # asdf
 . "$(brew --prefix asdf)/libexec/asdf.sh"
@@ -17,9 +18,9 @@ antigen bundle web-search
 antigen bundle dirhistory
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-# antigen theme therzka/zemoji
-# antigen theme denysdovhan/spaceship-prompt
-antigen theme sindresorhus/pure
+# antigen bundle therzka/zemoji
+# antigen bundle sindresorhus/pure
+antigen bundle denysdovhan/spaceship-prompt
 antigen apply
 
 # direnv
