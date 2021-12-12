@@ -10,6 +10,7 @@ brew "terraform"
 brew "tmux"
 
 cask "appcleaner"
+cask "dbeaver"
 cask "discord"
 cask "firefox"
 cask "google-chrome"

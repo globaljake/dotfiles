@@ -7,8 +7,8 @@ export PATH=/opt/homebrew/bin:$PATH
 # Install applications in from Brewfile
 brew bundle --global --no-lock
 
-# Source .zshrc file
-. ~/.zshrc
+# Source asdf.sh
+. "$(brew --prefix asdf)/libexec/asdf.sh"
 
 # Set up asdf to manage languages and databases
 asdf plugin add elixir
@@ -16,6 +16,7 @@ asdf plugin add elm
 asdf plugin add erlang
 asdf plugin add nodejs
 asdf plugin add ruby
+asdf plugin add rust
 asdf plugin add postgres
 
 # Install asdf nodejs package dependencies

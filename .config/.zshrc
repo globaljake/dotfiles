@@ -26,5 +26,10 @@ antigen apply
 # direnv
 eval "$(direnv hook zsh)"
 
+# instantly open a tmux session
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 # aliases
 alias gas="git add . && git status";

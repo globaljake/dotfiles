@@ -3,4 +3,5 @@ elm 0.19.1
 erlang 24.1.7
 nodejs 17.2.0
 ruby 3.0.3
+rust 1.57.0
 postgres 14.1
