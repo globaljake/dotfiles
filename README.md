@@ -4,7 +4,7 @@ My minimal approach to maintaining my essential applications, configuration file
 ## Install Applications / Configs
 ### ☁️ Step 1. Clone repo into `~`
 ```sh 
-git clone git@github.com:globaljake/dotfiles.git ~/.dotfiles
+git clone https://github.com/globaljake/dotfiles.git ~/.dotfiles
 ```
 
 ### 🤓 Step 2. Symlink contents of the `.config` directory to `~` 

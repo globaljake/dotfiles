@@ -7,6 +7,9 @@ export PATH=/opt/homebrew/bin:$PATH
 # Install applications in from Brewfile
 brew bundle --global --no-lock
 
+# Install Spark Email App (only available through the Mac App Store)
+mas install $(mas search spark-email | head -n1 | awk {'print $1'})
+
 # Source asdf.sh
 . "$(brew --prefix asdf)/libexec/asdf.sh"
 

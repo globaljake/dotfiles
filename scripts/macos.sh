@@ -58,6 +58,9 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 # Quit System Preferences so it doesn't muck with your settings
 osascript -e 'tell application "System Preferences" to quit'
 
+# Overwrite Chrome swipe to navigate
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
 
 
 # ###############################################################################
